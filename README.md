@@ -6,7 +6,7 @@ The file index.js is a simple web page with the buttons that activate tester fun
 # Order of Functions and Desired Test Output
 1) myEach() - desired test output: a b c
 2) myMap() - desired test output: [2, 4, 6]
-3) myFilter() - desired test output: [20, 50, 60, 70, 10]
+3) myFilter() - desired test output: [20, 50, 60, 70]
 4) mySome() - desired test output: false, true
 5) myEvery() - desired test output: true, false
 6) myReduce() - desired test output: 6, 106
