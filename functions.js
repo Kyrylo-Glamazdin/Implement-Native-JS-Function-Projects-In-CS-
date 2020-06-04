@@ -174,23 +174,35 @@ const sumOfTwo = (x1, x2) => {
 
 //tests myEach
 const test1 = () => {
+    console.log();
+    console.log("Testing myEach:");
+
     array1.myEach(callBackFunction) //prints each element of ['a', 'b', 'c']
 }
 
 //tests myMap
 const test2 = () => {
+    console.log();
+    console.log("Testing myMap:");
+
     const resultArray = array2.myMap(multiplyByTwo); //multiplies each element of [1, 2, 3] by 2
     console.log(resultArray); //prints [2, 4, 6]
 }
 
 //tests myFilter
 const test3 = () => {
+    console.log();
+    console.log("Testing myFilter:");
+    
     const resultArray = array3.myFilter(greaterThan10); //returns an array of elements greater than 10 from the array [1, 20, 3, 4, 50, 60, 70, 8, 9, 10]
     console.log(resultArray); //prints [20, 50, 60, 70, 10]
 }
 
 //tests mySome
 const test4 = () => {
+    console.log();
+    console.log("Testing mySome:");
+
     //returns true if some elements in [1, 2, 3] are greater than 10 (false)
     console.log(array2.mySome(greaterThan10)); //false
     //returns true if some elements in [1, 20, 3, 4, 50, 60, 70, 8, 9, 10] are greater than 10 (true)
@@ -199,6 +211,9 @@ const test4 = () => {
 
 //tests myEvery
 const test5 = () => {
+    console.log();
+    console.log("Testing myEvery:");
+
     //returns true if all elements in [1, 2, 3] are less than 10 (true)
     console.log(array2.myEvery(lessThan10)); //true
     //returns true if all elements in [1, 20, 3, 4, 50, 60, 70, 8, 9, 10] are less than 10 (false)
@@ -207,6 +222,9 @@ const test5 = () => {
 
 //tests myReduce
 const test6 = () => {
+    console.log();
+    console.log("Testing myReduce:");
+
     //uses sumOfTwo function which adds two elements together
     console.log(array2.myReduce(sumOfTwo)); // 1 + 2 + 3 = 6
     //uses sumOfTwo function which adds two elements together with an initial value of 100
@@ -215,6 +233,9 @@ const test6 = () => {
 
 //tests myIncludes
 const test7 = () => {
+    console.log();
+    console.log("Testing myIncludes:");
+
     //checks whether array ['a', 'b', 'c'] includes 'a' (true) and 'd' (false)
     console.log(array1.myIncludes('a')); //true
     console.log(array1.myIncludes('d')); //false
@@ -222,6 +243,9 @@ const test7 = () => {
 
 //tests myIndexOf
 const test8 = () => {
+    console.log();
+    console.log("Testing myIndexOf:");
+
     //returns indexes of letters in array ['a', 'b', 'c', 'a']
     console.log(array4.myIndexOf('a')); // 0
     console.log(array4.myIndexOf('a', 2)); // 3
@@ -230,6 +254,9 @@ const test8 = () => {
 
 //tests myPush
 const test9 = () => {
+    console.log();
+    console.log("Testing myPush:");
+
     //appends 'd' to the array ['a', 'b', 'c']
     let testArray1 = ['a', 'b', 'c'];
     testArray1.myPush('d');
@@ -243,6 +270,9 @@ const test9 = () => {
 
 //tests myLastIndexOf
 const test10 = () => {
+    console.log();
+    console.log("Testing myLastIndexOf:");
+
     //returns last indexes of letters array ['a', 'b', 'c', 'a']
     console.log(array4.myLastIndexOf('a')); // 3
     console.log(array4.myLastIndexOf('d')); // -1
@@ -250,6 +280,9 @@ const test10 = () => {
 
 //tests grabKeys
 const test11 = () => {
+    console.log();
+    console.log("Testing grabKeys:");
+
     let location = {
         latitude: 40.7678015,
         longitude: -73.968105,
@@ -262,6 +295,9 @@ const test11 = () => {
 
 //tests grabValues
 const test12 = () => {
+    console.log();
+    console.log("Testing grabValues:");
+
     let location = {
         latitude: 40.7678015,
         longitude: -73.968105,
